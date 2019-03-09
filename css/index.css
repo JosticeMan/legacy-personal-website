@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Oleo+Script');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    height: 97%;
+    width: 100%;
+    margin: auto;
+    display: table;
+    top: 0;
+    background-color: darkslategrey;
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.content h1 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 650%;
+    -webkit-text-stroke: 2px #408b0e;
+    background: darkslategrey;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content h2 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 250%;
+    background: #408b0e;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landing-logo {
+    width: 20%;
+    height: 20%;
+}
+
+.intro-btn {
+    font-family: 'Oleo Script', cursive;
+    font-size: 120%;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #408b0e;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: solid #35740b;
+    padding: 7px 15px;
+    border-radius: 9px;
+}
+
+.intro-btn:hover {
+    background: #55ba12;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: solid #55ba12;
+    padding: 7px 15px;
+    border-radius: 9px;
+}
+
+.credit-sect {
+    height: 3%;
+    width: 100%;
+    margin: auto;
+    background-color: darkslategrey;
+}
+
+.credit {
+    padding-top: 1%;
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    font-size: 5%;
+    background: #408b0e;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
