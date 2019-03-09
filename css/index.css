@@ -27,18 +27,7 @@ html, body {
     max-width: 50%;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 10%;
-}
-
-.content h1 {
-    padding: 0;
-    margin: 0;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-size: 650%;
-    -webkit-text-stroke: 2px #408b0e;
-    background: darkslategrey;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    padding-bottom: 7%;
 }
 
 .content h2 {
@@ -49,9 +38,11 @@ html, body {
     -webkit-text-fill-color: transparent;
 }
 
-.landing-logo {
-    width: 20%;
-    height: 20%;
+.title-logo {
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    padding: 0;
 }
 
 .intro-btn {
@@ -91,4 +82,24 @@ html, body {
     background: #408b0e;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+path#draw-animate {
+    stroke-dasharray: 200;
+    animation: draw 1s cubic-bezier(0, 0.23, 1, .1 );
+}
+
+@keyframes draw {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 200;
+    }
+    30% {
+        opacity: 10;
+        stroke-dashoffset: 200;
+    }
+    100% {
+        opacity: 10;
+        stroke-dashoffset: 0;
+    }
 }
