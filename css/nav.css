@@ -13,7 +13,6 @@
 nav {
     padding-top: 1%;
     padding-top: 1vw;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 175%;
@@ -23,9 +22,9 @@ nav {
 
 nav ul {
     position: absolute;
+    display: flex;
     top: 100%;
     right: 0;
-    display: flex;
     width: 27%;
     width: 27vw;
 }
@@ -56,7 +55,7 @@ nav ul li a::after {
     position: absolute;
     content: '';
     width: 100%;
-    height: 2px;
+    height: .5vh;
     left: 0;
     background-color: #1d3030;
     transform: scaleX(0);
