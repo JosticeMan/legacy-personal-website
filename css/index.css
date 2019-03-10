@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Oleo+Script');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Oleo+Script|Oswald');
 
 html, body {
     padding: 0;
@@ -15,13 +15,86 @@ html, body {
     font-family: 'Oleo Script', cursive;
 }
 
-.nav-bar {
+.wl-s {
+    font-family: 'Oswald', sans-serif;
+}
+
+.h-bar {
     position: absolute;
     top: 5%;
     left: 3%;
     width: 4%;
     height: 7%;
     max-width: none;
+}
+
+.nav-container {
+    position: absolute;
+    left: 5%;
+    width: 95%;
+}
+
+nav {
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 175%;
+}
+
+nav ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: flex;
+    width: 27%;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1% 0;
+    margin: 0 12%;
+    letter-spacing: 1px;
+}
+
+nav ul li a{
+    position: absolute;
+    text-decoration: none;
+    background: #35740b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul li a:last-child {
+    margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: #1d3030;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+nav ul li a::before {
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    transform: scaleX(1);
 }
 
 .nav-h-btn {

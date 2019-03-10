@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     }
                 },
                 "opacity": {
-                    "value": 1,
+                    "value": .3,
                     "random": true,
                     "anim": {
                         "enable": false,
                         "speed": 1,
-                        "opacity_min": 0.5,
+                        "opacity_min": 0.1,
                         "sync": false
                     }
                 },
