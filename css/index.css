@@ -23,9 +23,15 @@ html, body {
     position: absolute;
     top: 5%;
     left: 3%;
-    width: 4%;
+    width: 5%;
     height: 7%;
     max-width: none;
+}
+
+.nav-h-btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .nav-container {
@@ -97,12 +103,6 @@ nav ul li a:hover::after {
     transform: scaleX(1);
 }
 
-.nav-h-btn {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
 .intro {
     height: 97%;
     width: 100%;
@@ -130,6 +130,7 @@ nav ul li a:hover::after {
 
 .lc {
     font-size: 250%;
+    font-size: 3vw;
     background: #408b0e;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -144,6 +145,7 @@ nav ul li a:hover::after {
 
 .intro-btn {
     font-size: 120%;
+    font-size: 1.5vw;
     text-transform: uppercase;
     text-decoration: none;
     background: #408b0e;
@@ -171,8 +173,10 @@ nav ul li a:hover::after {
 
 .credit {
     padding-top: 1%;
+    padding-top: .75vw;
     text-align: center;
     font-size: 5%;
+    font-size: .5vw;
     background: #408b0e;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
