@@ -42,10 +42,12 @@ html, body {
 
 nav {
     padding-top: 1%;
+    padding-top: 1vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 175%;
+    font-size: 2vw;
     text-transform: uppercase;
 }
 
@@ -55,12 +57,15 @@ nav ul {
     right: 0;
     display: flex;
     width: 27%;
+    width: 27vw;
 }
 
 nav ul li {
     list-style: none;
     padding: 1% 0;
+    padding: .75vw 0;
     margin: 0 12%;
+    margin: 0 3vw;
     letter-spacing: 1px;
 }
 
