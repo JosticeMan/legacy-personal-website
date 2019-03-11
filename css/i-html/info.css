@@ -16,6 +16,10 @@
     height: 75vh;
 }
 
+#contact {
+    height: 75vh;
+}
+
 .inner section:nth-child(even) {
     background: #264040;
 }
