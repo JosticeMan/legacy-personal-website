@@ -1,5 +1,5 @@
 .side-who {
-    width: 100%;
+    width: 98%;
     height: 75%;
     height: 75vh;
     padding-left: 2%;
@@ -13,10 +13,11 @@
 
 .content {
     width: 100vw;
+    height: 75vh;
 }
 
 .inner section:nth-child(even) {
-    background: #35740b;
+    background: #264040;
 }
 
 .inner section:nth-child(odd) {

@@ -1,0 +1,42 @@
+.social-container {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.social-container ul {
+    margin: auto;
+    width: 70%;
+    overflow: hidden;
+}
+
+.social-container ul li.l-1 {
+     height: 100%;
+     list-style: none;
+     display: inline-block;
+     text-align: center;
+     padding: .25vw;
+     font-size: 3vw;
+}
+
+.social-container ul li a {
+    height: 100%;
+    color: #35740b;
+    -webkit-text-fill-color: #35740b;
+    -webkit-text-stroke-width: 1px;
+    text-decoration: none;
+}
+
+.s-i:hover, .s-i:focus {
+    color: #1d3030;
+    text-shadow: 0 0 1vw 0 #1d3030;
+}
+
+.l-2 {
+    height: 100%;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: .25vw;
+    font-size: 1vw;
+}

@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var renderer, scene, cmra, windowWidth, windowHeight;
     var resizeCanvasWidth = .65;
     var resizeCanvasHeight = .75;
-    var backgroundColor = 0x2f4f4f;
     var pixelColor = 0x35740b;
 
     windowWidth = window.innerWidth,
@@ -71,10 +70,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var init = function() {
         renderer = new THREE.WebGLRenderer({
             canvas: document.getElementById("scene"),
-            antialias: true
+            antialias: true,
+            alpha: true
         });
         renderer.setSize(windowWidth * resizeCanvasWidth, windowHeight * resizeCanvasHeight);
-        renderer.setClearColor(backgroundColor);
 
         scene = new THREE.Scene();
 
