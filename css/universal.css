@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Oleo+Script|Oswald|Roboto+Condensed:700');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.landing {
+    background-image: linear-gradient(darkslategray, darkslategrey);
+}
+
+.ol-s {
+    font-family: 'Oleo Script', cursive;
+}
+
+.wl-s {
+    font-family: 'Oswald', sans-serif;
+}
+
+.rl-s {
+    font-family: 'Roboto Condensed', sans-serif;
+}

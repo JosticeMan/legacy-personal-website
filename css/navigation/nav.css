@@ -75,4 +75,11 @@ nav ul li a::after {
 nav ul li a:hover::before,
 nav ul li a:hover::after {
     transform: scaleX(1);
+    background: #4aa30f;
+}
+
+nav ul li a:hover {
+    background: #4aa30f;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

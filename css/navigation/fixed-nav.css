@@ -1,0 +1,142 @@
+/*
+    This CSS file formats the following fixed navigation bar
+    <div class="nav-container wl-s">
+        <nav>
+            <a class="nav-h-btn" href="#"><img src="../images/logos/c-a.png" style="height: 100%; width: 100%"/></a>
+            <ul id = "left">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav-space"></div>
+*/
+
+.nav-h-btn {
+    z-index: 3;
+    position: absolute;
+    left: 1vw;
+    padding: 1vh 0;
+    height: 8vh;
+    width: 5vw;
+}
+
+
+.nav-space {
+    width: 100%;
+    height: 10vh;
+}
+
+.nav-container {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    width: 100vw;
+    height: 10%;
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+    background: #1d3030;
+}
+
+.nav-container nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-container nav ul#left {
+    display: flex;
+    padding: 0;
+    margin: 0 67%;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-container nav ul#left li {
+    list-style: none;
+    width: 30%;
+    height: 50%;
+    padding: 2% 0;
+    margin: 0 10%;
+    margin: 0 .5vw;
+    letter-spacing: 1px;
+}
+
+.nav-container nav ul#left li a {
+    font-size: 180%;
+    font-size: 2vw;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background: #35740b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-container nav ul#left li a::before,
+.nav-container nav ul#left li a::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: .5vh;
+    left: 0;
+    background-color: #1d3030;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+.nav-container nav ul#left li a::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.nav-container nav ul#left li a::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.nav-container nav ul#left li a:hover::before,
+.nav-container nav ul#left li a:hover::after {
+    transform: scaleX(1);
+    background: #4aa30f;
+}
+
+.nav-container nav ul#left li a:hover {
+    background: #4aa30f;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer {
+    z-index: 3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    width: 100vw;
+    height: 2.5%;
+    height: 2.5vh;
+    padding: 0;
+    margin: 0;
+    background: #1d3030;
+}
+
+#footer-note {
+    z-index: 3;
+    position: absolute;
+    bottom: 1vw;
+    bottom: .25vw;
+    width: 100%;
+    width: 100vw;
+    text-align: center;
+    font-size: 50%;
+    font-size: .5vw;
+    background: #35740b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
