@@ -1,3 +1,44 @@
-.landing {
-    background-image: linear-gradient(darkslategray, darkslategrey);
+.side-who {
+    width: 100%;
+    height: 75%;
+    height: 75vh;
+    padding-left: 2%;
+}
+
+.inner, .inner section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.content {
+    width: 100vw;
+}
+
+.inner section:nth-child(even) {
+    background: #35740b;
+}
+
+.inner section:nth-child(odd) {
+    background: darkslategrey;
+}
+
+path.draw-animate {
+    stroke-dasharray: 250;
+    animation: draw 1.5s cubic-bezier(0, 0.23, 1, .1 );
+}
+
+@keyframes draw {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 250;
+    }
+    30% {
+        opacity: 10;
+        stroke-dashoffset: 250;
+    }
+    100% {
+        opacity: 10;
+        stroke-dashoffset: 0;
+    }
 }

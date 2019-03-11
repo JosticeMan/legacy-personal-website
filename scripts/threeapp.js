@@ -11,9 +11,9 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 document.addEventListener("DOMContentLoaded", function(event) {
     var particles = [];
     var renderer, scene, cmra, windowWidth, windowHeight;
-    var resizeCanvasWidth = .25;
-    var resizeCanvasHeight = .25;
-    var backgroundColor = 0x1d3030;
+    var resizeCanvasWidth = .65;
+    var resizeCanvasHeight = .75;
+    var backgroundColor = 0x2f4f4f;
     var pixelColor = 0x35740b;
 
     windowWidth = window.innerWidth,
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         var geometry = new THREE.Geometry();
         var material = new THREE.PointsMaterial({
-            size: 2,
+            size: 3,
             color: pixelColor,
             sizeAttenuation: false
         });
