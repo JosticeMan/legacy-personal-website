@@ -24,12 +24,11 @@
 
 .content {
     position: absolute;
-    top: 12%;
+    top: 15%;
     left: 25%;
     max-width: 50%;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 7%;
 }
 
 .lc {
