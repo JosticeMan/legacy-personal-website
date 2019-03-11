@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var c2d = canvas.getContext('2d');
     var particles = [];
 
-    const MAX_RENDER = 75;
+    const MAX_RENDER = 125;
     var rendered = 0;
 
     function drawImage() {
