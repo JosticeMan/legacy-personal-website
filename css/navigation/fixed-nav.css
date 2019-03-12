@@ -137,7 +137,7 @@
     width: 100vw;
     text-align: center;
     font-size: 50%;
-    font-size: calc(.5vw + (1.5 * .375vh));
+    font-size: calc(.5vw + (1.1 * .375vh));
     background: #35740b;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
