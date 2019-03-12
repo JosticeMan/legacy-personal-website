@@ -19,13 +19,13 @@
     left: 1vw;
     padding: 1vh 0;
     height: 8vh;
-    width: 5vw;
+    width: calc(5vw + (1.5 * 1vh));
 }
 
 
 .nav-space {
     width: 100%;
-    height: 10vh;
+    height: calc(10vh - (1 * .25vw));
 }
 
 .nav-container {
@@ -34,7 +34,7 @@
     width: 100%;
     width: 100vw;
     height: 10%;
-    height: 10vh;
+    height: calc(10vh - (.25vw));
     padding: 0;
     margin: 0;
     background: #1d3030;
