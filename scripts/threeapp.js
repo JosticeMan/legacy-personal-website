@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         requestAnimationFrame(render);
     };
 
-    var init = function() {
+    var init = function(image, canvid) {
         renderer = new THREE.WebGLRenderer({
-            canvas: document.getElementById("scene"),
+            canvas: document.getElementById(canvid),
             antialias: true,
             alpha: true
         });
@@ -137,7 +137,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     };
 
     var image = document.createElement("img");
-    image.onload = init;
+    image.onload = function () {
+        init(image, "me");
+    }
     image.src = "../images/gray-me-bg.png";
 
 });
