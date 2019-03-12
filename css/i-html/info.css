@@ -17,7 +17,7 @@
 }
 
 #contact {
-    height: calc(75vh - (25 - 25vw));
+    height: calc(35vh + 20vw);
 }
 
 .inner section:nth-child(even) {
