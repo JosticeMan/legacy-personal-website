@@ -1,0 +1,9 @@
+.scrollbar {
+    z-index: 3;
+    position: fixed;
+    top: 30vh;
+    right: 0;
+    width: 2.5vw;
+    height: 40vh;
+    text-align: center;
+}
