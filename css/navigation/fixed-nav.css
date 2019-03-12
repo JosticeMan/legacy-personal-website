@@ -51,28 +51,31 @@
 .nav-container nav ul#left {
     display: flex;
     padding: 0;
-    margin: 0 67%;
+    margin: 0 65%;
     width: 30%;
     height: 100%;
-    align-items: center;
+    text-align: center;
 }
 
 .nav-container nav ul#left li {
+    text-align: left;
     list-style: none;
-    width: 30%;
-    height: 50%;
+    width: 25%;
+    height: 100%;
     margin: 0 10%;
-    margin: 0 .25vw;
+    margin: 0 1vw;
     letter-spacing: 1px;
 }
 
 .nav-container nav ul#left li a {
+    top: 3vh;
     font-size: 180%;
-    font-size: 2vw;
+    font-size: calc(1.4vw + (1.5 * .65vh));
     position: absolute;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    margin: auto;
     background: #35740b;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -134,7 +137,7 @@
     width: 100vw;
     text-align: center;
     font-size: 50%;
-    font-size: .5vw;
+    font-size: calc(.5vw + (1.5 * .375vh));
     background: #35740b;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
