@@ -8,7 +8,7 @@ html, body {
     width: 100%;
 }
 
-.landing {
+.landing, .landing-o {
     background-image: linear-gradient(darkslategray, darkslategrey);
 }
 
