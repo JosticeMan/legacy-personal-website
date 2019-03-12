@@ -11,12 +11,11 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 document.addEventListener("DOMContentLoaded", function(event) {
     var particles = [];
     var renderer, scene, cmra, windowWidth, windowHeight;
-    var resizeCanvasWidth = .65;
-    var resizeCanvasHeight = .75;
-    var pixelColor = 0x35740b;
-
     windowWidth = window.innerWidth,
         windowHeight = window.innerHeight;
+    var resizeCanvasWidth = .65 * windowWidth;
+    var resizeCanvasHeight = (.15 * windowHeight) + (.3 * windowWidth);
+    var pixelColor = 0x35740b;
 
     var centerVector = new THREE.Vector3(0, 0, 0);
     var speed = 10;
@@ -73,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             antialias: true,
             alpha: true
         });
-        renderer.setSize(windowWidth * resizeCanvasWidth, windowHeight * resizeCanvasHeight);
+        renderer.setSize(resizeCanvasWidth, resizeCanvasHeight);
 
         scene = new THREE.Scene();
 
@@ -96,7 +95,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var resizeEvent = function(){
         windowWidth = window.innerWidth;
         windowHeight = window.innerHeight;
-        renderer.setSize(windowWidth * resizeCanvasWidth, windowHeight * resizeCanvasHeight);
+        resizeCanvasWidth = .65 * windowWidth;
+        resizeCanvasHeight = (.15 * windowHeight) + (.3 * windowWidth);
+        renderer.setSize(resizeCanvasWidth, resizeCanvasHeight);
         cmra.left    = windowWidth / - 2;
         cmra.right   = windowWidth / 2;
         cmra.top     = windowHeight / 2;
