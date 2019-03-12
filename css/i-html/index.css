@@ -54,7 +54,7 @@
     background: #408b0e;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border: solid #35740b;
+    border: solid .2vw #35740b;
     padding: 7px 15px;
     border-radius: 9px;
 }
