@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var c2d = canvas.getContext('2d');
     var particles = [];
 
-    const MAX_RENDER = 125;
+    const MAX_RENDER = 5;
     var rendered = 0;
 
     function drawImage() {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var data = c2d.getImageData(0, 0, png.width, png.height);
         c2d.clearRect(0, 0, canvas.width, canvas.height);
         for (var y = 0; y < data.width; y += 2) {
-            for (var x = 0; x < data.height; x += 3) {
+            for (var x = 0; x < data.height; x += 5) {
                 var p = (x + y * data.width) * 4;
                 if (data.data[p + 3] > 128) {
                     var particle = {
@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
                         y0: y,
                         x1: png.width / 2,
                         y1: png.height / 2,
-                        speed: Math.random() * 3
+                        speed: .35,
                     };
 
                     TweenMax.to(particle, particle.speed, {
                         x1: x,
                         y1: y,
-                        delay: y / 300,
+                        delay: y / 2500,
                         ease: Elastic.easeOut,
                     });
 
