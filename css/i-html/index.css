@@ -27,6 +27,7 @@
     position: absolute;
     top: 15%;
     left: 25%;
+    width: 50%;
     max-width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -41,6 +42,7 @@
 }
 
 .title-logo {
+    display: inline-block;
     width: 25%;
     height: 25%;
     margin: 0;
