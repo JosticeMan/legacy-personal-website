@@ -57,20 +57,39 @@
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .nav-container nav ul#left {
+        margin: 0 57.5%;
+    }
+
+    .nav-container nav ul#left li a {
+        font-size: 250%;
+        font-size: calc(1.75vw + (1.2 * .65vh));
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-container nav ul#left {
+        margin: 0 65%;
+    }
+
+    .nav-container nav ul#left li a {
+        font-size: 180%;
+        font-size: calc(1.4vw + (1.2 * .65vh));
+    }
+}
+
 .nav-container nav ul#left li {
     text-align: left;
     list-style: none;
     width: 25%;
     height: 100%;
     margin: 0 10%;
-    margin: 0 1vw;
     letter-spacing: 1px;
 }
 
 .nav-container nav ul#left li a {
     top: 3vh;
-    font-size: 180%;
-    font-size: calc(1.4vw + (1.2 * .65vh));
     position: absolute;
     text-decoration: none;
     text-transform: uppercase;

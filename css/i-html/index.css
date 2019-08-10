@@ -34,15 +34,49 @@
 
 @media (max-width: 768px) {
     .content {
+        top: 30%;
         left: 15%;
         width: 70%;
+    }
+
+    .nav-container a {
+        font-size: 2.75vw;
+    }
+
+    .h-bar {
+        width: 7.5%;
+    }
+
+    .credit {
+        font-size: 1.5vw;
+    }
+
+    .social-networks a {
+        font-size: 4vw !important;
     }
 }
 
 @media (min-width: 769px) {
     .content {
+        top: 15%;
         left: 25%;
         width: 50%;
+    }
+
+    .nav-container a {
+        font-size: 2.5vw;
+    }
+
+    .h-bar {
+        width: 5%;
+    }
+
+    .social-networks a {
+        font-size: 2vw !important;
+    }
+
+    .credit {
+        font-size: .5vw;
     }
 }
 
@@ -95,8 +129,6 @@
     padding-top: 1%;
     padding-top: .75vw;
     text-align: center;
-    font-size: 5%;
-    font-size: .5vw;
     background: #408b0e;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
